@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: '{Your-Github-Repository-SSH}'
+          passphrase: '{SSH-PW}'
+          ignore-local-ssh-settings: false
+server:
+  port: 8888
+
+private:
+  security:
+    key:
+      # admin
+      id: '{cipher}3ea285be2a49226ab1b3f83831d3acc44fff760c4e558266fee2b3a42474e7ad'
+      # admin777
+      pwd: '{cipher}b2ce5676f8cbffe9b877d72c485fee7e2ff909a01d7f70ca31489ab957b293fb'
